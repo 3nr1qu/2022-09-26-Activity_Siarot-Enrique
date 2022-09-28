@@ -6,7 +6,6 @@ class Arraynum{
     Arraynum(int num){
         this.num = num;
 
-        
     }
     public int getNum(){
         return num;
@@ -17,7 +16,7 @@ class Arraynum{
     }
      
 }
-class ArrayListSiarot{
+class Main{
     public static void main(String[] args){
         
         List<Arraynum> al = new ArrayList<Arraynum>();
@@ -48,6 +47,7 @@ class ArrayListSiarot{
                     {
                         break;
                     }
+                    System.out.println("  Added "+al);
                     
                 break;
                 
@@ -55,10 +55,9 @@ class ArrayListSiarot{
                     System.out.println("\n ");
                     System.out.println("   Display Number ");
                     Iterator<Arraynum> i = al.iterator();
-                    while(i.hasNext()){
-                        Arraynum e =i.next();
-                        System.out.println("   "+e);
-                    }
+                    System.out.println("   List: "+al);
+                   
+                    
                 break;
                 case 2:
                     boolean found = false;
