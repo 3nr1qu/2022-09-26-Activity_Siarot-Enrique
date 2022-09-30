@@ -5,8 +5,8 @@ class HashMapSiarot{
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
         Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
-         
-        char option;
+        
+        int option;
         
         do{
 
@@ -14,10 +14,10 @@ class HashMapSiarot{
             System.out.println(" \n  ");
             System.out.println("   HASHMAP  ");
             System.out.print("\n   [1] Add Numbers \n   [2] Delete Numbers \n   [3] Display Numbers \n   [4] Clear \n   [5] Exit \n\n   Your Choice: ");
-            option = s.next().charAt(0);
+            option = s.nextInt();
             
             switch(option){
-                case '1':
+                case 1:
                     for (int i = 0; i < 5; ++i) {
                             System.out.print("   Enter 1st num: ");
                             int number = s.nextInt();
@@ -33,7 +33,7 @@ class HashMapSiarot{
                     
                 break;
                 
-                case '3':
+                case 3:
                     System.out.println("\n ");
                     System.out.println("   Display Number ");
                     System.out.println("   Map: " + hm);
@@ -42,7 +42,7 @@ class HashMapSiarot{
                     System.out.println(m.getKey() + " " + m.getValue());
         }
                 break;
-                case '2':
+                case 2:
                     System.out.print("   Choose number to delete: ");
                     int num = s.nextInt();
                     
@@ -52,12 +52,12 @@ class HashMapSiarot{
                     
                     
                 break;
-                case '4':
+                case 4:
                     System.out.println("\n ");
                     System.out.println("   All Numbers are Successfully Clear!!! ");
                     hm.clear();
                 break;
-                case '5':
+                case 5:
                     
                     System.out.println("   GOODBYE!!! ");
                     System.exit(0);
@@ -73,6 +73,24 @@ class HashMapSiarot{
             
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
 
