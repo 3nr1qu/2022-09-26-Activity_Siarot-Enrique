@@ -6,7 +6,7 @@ public class NameException extends Exception{
 
              }
     public void nameError(){
-        System.out.println("no name in index");
+        System.out.println("no name in indexs");
     }
 }
 

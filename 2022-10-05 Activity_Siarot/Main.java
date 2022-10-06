@@ -9,28 +9,35 @@ public class Main{
         int num = input.nextInt();
 
         String [] names = new String[num];
+        int [] age = new int[num];
 
         for (int i = 0 ; i < num; i++ ) {
             System.out.println("Enter the name: ");
-           names[i] = input.next();
+            names[i] = input.next();
+            System.out.print("Enter "+ names[i]+ " age: ");
+            age[i] = input.nextInt();
         }
 
         System.out.println("Enter index name: ");
         int choice = input.nextInt();
 
         try {
-                if(choice< 0 || choice >5 && choice< 0 || choice >4){
+
+                if(choice >= 0 && choice <names.length){
                 input.close();
+                System.out.println("The index name is: "+names[choice]+" | Age is: "+age[choice]);
+               
+                
+            }else{
                 throw new NameException("no name in index");
-            }
-        
-                System.out.println("The index name is: "+names[choice]);
+                
+        }
             }catch(NameException e){
                 
                 e.nameError();
             }
             input.close();
-
+            
     }
         
 }
