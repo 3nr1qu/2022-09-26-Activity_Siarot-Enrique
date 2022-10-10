@@ -6,7 +6,7 @@ public class NameException extends Exception{
 
              }
     public void nameError(){
-        System.out.println("no name in indexs");
+        System.out.println("Your input exceeds the size of the array");
     }
 }
 

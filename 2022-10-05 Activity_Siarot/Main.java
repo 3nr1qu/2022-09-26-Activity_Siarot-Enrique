@@ -5,7 +5,8 @@ public class Main{
     public static void main(String [] args){
     Scanner input = new Scanner(System.in);
 
-        System.out.println("How many numbers index name you want to enter?");
+        System.out.println("How many objects index name you want to enter?");
+        List<Person> array = new ArrayList<Person>();
         int num = input.nextInt();
 
         String [] names = new String[num];
@@ -29,7 +30,7 @@ public class Main{
                
                 
             }else{
-                throw new NameException("no name in index");
+                throw new NameException("Your input exceeds the size of the array");
                 
         }
             }catch(NameException e){
@@ -41,3 +42,4 @@ public class Main{
     }
         
 }
+
